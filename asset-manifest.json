@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/cherishx/static/css/main.23888403.css",
+    "main.js": "/cherishx/static/js/main.84f9ea1b.js",
+    "static/js/453.ed221b41.chunk.js": "/cherishx/static/js/453.ed221b41.chunk.js",
+    "static/media/dem.jpg": "/cherishx/static/media/dem.844ca9ea5276bb071ff3.jpg",
+    "static/media/demss.jpg": "/cherishx/static/media/demss.4b092b0714959387f543.jpg",
+    "static/media/dems.jpg": "/cherishx/static/media/dems.c04654bb8276f56b5aa0.jpg",
+    "static/media/h.jpg": "/cherishx/static/media/h.b2373341bbfd52485e7b.jpg",
+    "static/media/bw.jpg": "/cherishx/static/media/bw.8406cfb47b1df853781e.jpg",
+    "static/media/birth.jpg": "/cherishx/static/media/birth.febd1568e697dda46da5.jpg",
+    "static/media/wa.jpg": "/cherishx/static/media/wa.66a47e8455919fce6c98.jpg",
+    "static/media/cd.jpg": "/cherishx/static/media/cd.b63d86a33317be369243.jpg",
+    "static/media/bs.jpg": "/cherishx/static/media/bs.e73cffb1bce81338ffcd.jpg",
+    "static/media/hw.jpg": "/cherishx/static/media/hw.161fb460245772af14f7.jpg",
+    "static/media/pd.avif": "/cherishx/static/media/pd.3c9d72bf4051027b618d.avif",
+    "static/media/five.jpg": "/cherishx/static/media/five.3d236676fe8e9ffced7f.jpg",
+    "static/media/six.jpg": "/cherishx/static/media/six.c4859ee5c69c7a8dee8d.jpg",
+    "static/media/medal.avif": "/cherishx/static/media/medal.b3a21baabaf426fbbcf1.avif",
+    "static/media/brands.avif": "/cherishx/static/media/brands.60b1d789af8101214ebb.avif",
+    "static/media/google.avif": "/cherishx/static/media/google.6eb7e7d6bb41a32e27eb.avif",
+    "static/media/followers.avif": "/cherishx/static/media/followers.b44a47a607eb52ef0902.avif",
+    "index.html": "/cherishx/index.html",
+    "main.23888403.css.map": "/cherishx/static/css/main.23888403.css.map",
+    "main.84f9ea1b.js.map": "/cherishx/static/js/main.84f9ea1b.js.map",
+    "453.ed221b41.chunk.js.map": "/cherishx/static/js/453.ed221b41.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23888403.css",
+    "static/js/main.84f9ea1b.js"
+  ]
+}
