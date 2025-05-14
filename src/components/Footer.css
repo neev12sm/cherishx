@@ -91,3 +91,42 @@
   color: #bbb;
   margin-top: 0.5rem;
 }
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-section {
+    margin-right: 0;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-section h3,
+  .footer-bottom h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-section li {
+    font-size: 0.95rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+
+  .social-icons svg {
+    font-size: 1rem;
+  }
+}

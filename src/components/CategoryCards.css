@@ -1,6 +1,6 @@
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Force 4 columns */
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
   gap: 24px;
   padding: 2rem;
   justify-items: center;
@@ -14,6 +14,8 @@
   text-align: center;
   transition: transform 0.3s ease;
   cursor: pointer;
+  width: 100%;
+  max-width: 200px;
 }
 
 .category-card:hover {
@@ -21,7 +23,7 @@
 }
 
 .category-image {
-  width: 160px;
+  width: 100%;
   height: 160px;
   object-fit: cover;
   border-radius: 20px;
@@ -32,4 +34,34 @@
   font-weight: 600;
   font-size: 1rem;
   color: #333;
+}
+
+/* 🔽 Medium screens: show 3 columns */
+@media (max-width: 1024px) {
+  .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 🔽 Small tablets and large phones: show 2 columns */
+@media (max-width: 768px) {
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 🔽 Small phones: show 1 column */
+@media (max-width: 480px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .category-image {
+    height: 140px;
+  }
+
+  .category-label {
+    font-size: 0.95rem;
+  }
 }

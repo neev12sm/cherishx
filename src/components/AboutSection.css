@@ -1,7 +1,7 @@
 .about-container {
   max-width: 1200px;
   margin: auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   font-family: 'Segoe UI', sans-serif;
   color: #2c2c2c;
 }
@@ -50,16 +50,17 @@
 
 .stats-cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .stat-card {
-  flex: 1 1 200px;
-  max-width: 220px;
+  flex: 1 1 220px;
+  max-width: 240px;
   text-align: center;
+  padding: 1rem;
 }
 
 .stat-card img {
@@ -77,4 +78,59 @@
 .stat-card p {
   font-size: 0.95rem;
   color: #444;
+}
+
+/* 🔽 Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-container p {
+    font-size: 0.95rem;
+  }
+
+  .stats-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .stat-card {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .about-container h1 {
+    font-size: 1.3rem;
+  }
+
+  .about-container p {
+    font-size: 0.9rem;
+  }
+
+  .show-more-btn {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .stats-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .stat-card img {
+    height: 64px;
+  }
+
+  .stat-card h4 {
+    font-size: 1rem;
+  }
+
+  .stat-card p {
+    font-size: 0.85rem;
+  }
 }

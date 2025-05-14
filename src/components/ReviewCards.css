@@ -25,6 +25,11 @@
   padding: 1.5rem;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
 }
 
 .review-avatar {
@@ -55,6 +60,7 @@
   min-height: 60px;
 }
 
+/* Optional: Add review-footer if showing event info */
 .review-footer {
   display: flex;
   align-items: center;
@@ -81,4 +87,41 @@
   font-size: 0.8rem;
   color: #ff6e6e;
   margin: 0;
+}
+
+/* ✅ Responsive for Tablets */
+@media (max-width: 768px) {
+  .review-grid {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .review-card {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
+/* ✅ Responsive for Mobile Phones */
+@media (max-width: 480px) {
+  .review-section {
+    padding: 1rem;
+  }
+
+  .review-title {
+    font-size: 1.5rem;
+  }
+
+  .review-card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .review-name {
+    font-size: 1rem;
+  }
+
+  .review-text {
+    font-size: 0.9rem;
+  }
 }

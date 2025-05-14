@@ -1,34 +1,21 @@
 .navbar-wrapper {
   font-family: 'Segoe UI', sans-serif;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
 }
 
+/* === Top Bar === */
 .top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  background-color: #fff;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo img {
-  width: 30px;
-  margin-right: 8px;
-}
-
-.brand-name {
-  font-size: 20px;
-  font-weight: bold;
-  color: #333;
-}
-
-.brand-name .highlight {
-  color: #a855f7;
+  height: 40px;
+  width: auto;
 }
 
 .search-bar {
@@ -37,9 +24,14 @@
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 5px 10px;
-  width: 300px;
+  width: 100%;          /* Takes full container width */
+  max-width: 300px;     /* Limits width on large screens */
   background-color: #fafafa;
+  box-sizing: border-box;
 }
+
+
+
 
 .search-bar input {
   border: none;
@@ -84,13 +76,19 @@
   font-weight: bold;
 }
 
+.hamburger {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* === Bottom Bar === */
 .bottom-bar {
   display: flex;
   justify-content: center;
-  background: #fff;
-  border-top: 1px solid #eee;
-  padding: 10px 0;
   gap: 30px;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
   font-size: 16px;
 }
 
@@ -104,7 +102,52 @@
   font-size: 10px;
   margin-left: 4px;
 }
-.logo img {
-  height: 30px; /* or try 60px, 70px based on what looks good */
-  width: auto;  /* keeps the aspect ratio */
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .search-bar {
+    max-width: 100%;      /* Use full width on small screens */
+    margin: 10px 0;
+  }
+
+  .search-bar input {
+    font-size: 13px;
+  }
+
+  .nav-icons {
+    width: 100%;
+    justify-content: space-around;
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+    color: #7e22ce;
+  }
+
+  .bottom-bar {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+  }
+
+  .bottom-bar.open {
+    display: flex;
+  }
+
+  .nav-item {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
 }

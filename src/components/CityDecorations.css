@@ -1,50 +1,75 @@
 .city-decorations-container {
   background-color: #f8f8f8;
-  padding: 2rem;
+  padding: 2rem 1rem;
   font-family: 'Segoe UI', sans-serif;
   color: #2c2c2c;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .city-decorations-container h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .city-tabs {
   display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  gap: 1rem;
+  overflow-x: auto;
+  flex-wrap: nowrap;
   border-bottom: 1px solid #ddd;
   margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  scrollbar-width: none; /* Firefox */
+}
+
+.city-tabs::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
 }
 
 .city-tab {
   font-size: 1rem;
   color: #888;
   cursor: pointer;
-  padding-bottom: 0.5rem;
+  white-space: nowrap;
+  padding: 0.3rem 0.5rem;
   position: relative;
+  transition: color 0.3s;
+}
+
+.city-tab:hover {
+  color: #000;
 }
 
 .city-tab.active {
   color: #000;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .city-tab.active::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
-  border-bottom: 2px solid #000;
+  height: 2px;
+  background-color: #000;
 }
 
 .decor-category-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1.5rem;
+}
+
+.decor-category {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
 .decor-category h4 {
@@ -56,4 +81,19 @@
 .decor-category p {
   color: #888;
   font-size: 0.95rem;
+}
+
+/* Responsive text sizes */
+@media (max-width: 768px) {
+  .city-decorations-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .city-tab {
+    font-size: 0.9rem;
+  }
+
+  .decor-category h4 {
+    font-size: 1rem;
+  }
 }
