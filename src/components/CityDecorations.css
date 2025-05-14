@@ -1,0 +1,59 @@
+.city-decorations-container {
+  background-color: #f8f8f8;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #2c2c2c;
+}
+
+.city-decorations-container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.city-tabs {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2rem;
+}
+
+.city-tab {
+  font-size: 1rem;
+  color: #888;
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.city-tab.active {
+  color: #000;
+  font-weight: 500;
+}
+
+.city-tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid #000;
+}
+
+.decor-category-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.decor-category h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.decor-category p {
+  color: #888;
+  font-size: 0.95rem;
+}

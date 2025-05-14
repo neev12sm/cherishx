@@ -1,0 +1,93 @@
+.footer {
+  /* background-color: #1d1d1d; */
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 3rem 2rem;
+  /* background-image: url('https://www.transparenttextures.com/patterns/connected.png'); */
+  background-color: #000f14;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin-right: 2rem;
+}
+
+.footer-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #d9d9d9;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.footer-section li svg {
+  margin-right: 0.6rem;
+  font-size: 1.1rem;
+}
+
+.footer-section li:hover {
+  color: #ffffff;
+}
+
+.footer-divider {
+  border-color: #333;
+  margin: 2rem 0;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons svg {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.social-icons svg:hover {
+  color: white;
+}
+
+.footer-bottom p {
+  font-size: 0.85rem;
+  color: #bbb;
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,110 @@
+.navbar-wrapper {
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+  margin-right: 8px;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.brand-name .highlight {
+  color: #a855f7;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 5px 10px;
+  width: 300px;
+  background-color: #fafafa;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  background: transparent;
+}
+
+.search-icon {
+  color: #7e22ce;
+  cursor: pointer;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.icon-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+}
+
+.icon-block svg {
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.icon-block.location {
+  flex-direction: row;
+  gap: 5px;
+  background: #f3f0ff;
+  border-radius: 6px;
+  padding: 4px 8px;
+  color: #7e22ce;
+  font-weight: bold;
+}
+
+.bottom-bar {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 10px 0;
+  gap: 30px;
+  font-size: 16px;
+}
+
+.nav-item {
+  position: relative;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.dropdown {
+  font-size: 10px;
+  margin-left: 4px;
+}
+.logo img {
+  height: 30px; /* or try 60px, 70px based on what looks good */
+  width: auto;  /* keeps the aspect ratio */
+}

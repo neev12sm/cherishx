@@ -1,0 +1,80 @@
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #2c2c2c;
+}
+
+.about-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-container p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.services-heading {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.show-more-btn {
+  padding: 10px 20px;
+  border: 1px solid #800080;
+  background: white;
+  color: #800080;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.stats-section {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.stats-section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #f08fb0;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+.stats-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.stat-card {
+  flex: 1 1 200px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.stat-card img {
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.stat-card h4 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.stat-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
