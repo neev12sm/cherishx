@@ -127,3 +127,41 @@
   border-radius: 2rem;
   object-fit: cover;
 }
+/* Responsive styling for service icons only */
+@media (max-width: 768px) {
+  .services-bar {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .service-icon img {
+    height: 48px;
+    width: 48px;
+  }
+
+  .service-label {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-bar {
+    gap: 0.75rem;
+    padding: 1rem 0;
+  }
+
+  .service-icon {
+    width: 33%;
+  }
+
+  .service-icon img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .service-label {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+
